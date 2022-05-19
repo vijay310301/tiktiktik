@@ -116,15 +116,15 @@
 
 <img src="gameLogic/images/demo1.png">
 
-<img src="/home/guest/Documents/tiktikgame/gameLogic/images/demo2.png">
+<img src="gameLogic/images/demo2.png">
 
-<img src="/home/guest/Documents/tiktikgame/gameLogic/images/demo3.png">
+<img src="gameLogic/images/demo3.png">
 
-<img src="/home/guest/Documents/tiktikgame/gameLogic/images/demo4.png">
+<img src="gameLogic/images/demo4.png">
 
-<img src="/home/guest/Documents/tiktikgame/gameLogic/images/demo5.png">
+<img src="gameLogic/images/demo5.png">
 
-<img src="/home/guest/Documents/tiktikgame/gameLogic/images/demo6.png">
+<img src="gameLogic/images/demo6.png">
    
 
 
