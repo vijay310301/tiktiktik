@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+#page{
+    display : none;
+    margin-left: 420px;
+    margin-top : 100px;
+}
+
+#image{
+    display:block;
+}
+
+#text{
+    margin-left:60px;
+    font-weight: 1000;
+    color:orangered;
+}
+
+#game{
+
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    display : none;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+#game2{
+
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    display : none;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-left: 450px;
+}
+
+td {
+    position: relative;
+    border-radius: 20px;
+   
+    
+
+   
+}
+
+input[type="text"], textarea {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    resize: none;
+    background-color: #99ebff;
+    border-radius: 20px;
+    border:3px solid black;
+    font-size: 50px;
+    
+
+
+    /* for full width without spacing */
+    width: 100%;
+   
+}
+
+
+
+
+ #player1{
+    display:none;
+    color: white;
+    font-weight: 700;
+  
+    
+}
+
+
+#player2{
+    display:none;
+    color:black;
+    margin-left:850px;
+    font-weight: 700;
+    
+    
+} 
+
+#sorry1{
+    display:none;
+    margin-top:100px;
+    color:white;
+    font-weight: 700;
+
+}
+
+#sorry2{
+    display:none;
+    color:black;
+    margin-top:100px;
+    margin-left:850px;
+    font-weight: 700;
+}
+
+#win1{
+    display:none;
+    margin-left:380px;
+    color:green;
+    font-weight: 1000;
+}
+#win2{
+    display:none;
+    margin-left:380px;
+    color:green;
+    font-weight: 1000;
+}
+ #draw{
+    display:none  ;
+    margin-left:475px;
+    color:grey;
+    font-weight: 1000;
+ }
+
+
