@@ -114,7 +114,7 @@
 
 ## Sample Screens ##
 
-<img src="/home/guest/Documents/tiktikgame/gameLogic/images/demo1.png">
+<img src="tiktikgame/gameLogic/images/demo1.png">
 
 <img src="/home/guest/Documents/tiktikgame/gameLogic/images/demo2.png">
 
