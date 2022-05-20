@@ -27,38 +27,42 @@
 
     <div class="row">
         <div class="col-12 ">
+           
 
             <button class="btn btn-lg m-auto" id="game"  onclick="showTable()"> Start Game </button>
             <img  id ="image"src="./images/last.jpg" width="1500px" height="800px" style="margin-left:-180px;margin-top: 10px;">
 
-           
-                <h2 id="player1" > Hi player1 use only x </h2>
-                <h2 id="player2" > Hi player2 use only o </h2>
+            
+                <h1 id="player1" > Hey player1 press x </h2>
+                <h2 id="player2" > Hey player2 press o  </h2>
 
                 <h4 id ="sorry1"> Oops ! Sorry You entered a wrong key </h4>
+                <button class="btn btn-danger btn-lg" id="resetA" onclick="resetA()" >Reset</button>
                  <h4 id="sorry2"> Oops ! Sorry You entered a wrong key </h4>
-               
+                 <button class="btn btn-danger btn-lg " id="resetB" onclick="resetB()" >Reset</button>
           
 
             <div  id = "page">
-            <h1 id="text" > Tik Tak Toe </h1>
+            <h1 id="text" > Tic Tac Toe </h1>
             <table >
                 <tr>
-                    <td style="width:100px;height:100px;" id="a"><input type="text" required maxlength="1" size="1"  onkeypress="displaya(event)"  ></td>
-                    <td style="width:100px;height:100px;" id="b" ><input type="text" required maxlength="1"  size="1"  onkeypress="displayb(event)"  ></td>
-                    <td style="width:100px;height:100px;" id="c" ><input type="text" required maxlength="1"  size="1"  onkeypress="displayc(event)"  ></td>
+                     <!-- <td id="sample1"><input type="text" onkeypress="chumma(event)" id="sample2"></td>  -->
+                    <td ><input  id="first" type="text"  required maxlength="1" size="1"
+                         onkeypress="displaya(event)"  ></td>
+                    <td style="width:100px;height:100px;"  ><input id="second" type="text" required maxlength="1"  size="1"  onkeypress="displayb(event)"  ></td>
+                    <td style="width:100px;height:100px;" ><input id="third" type="text" required maxlength="1"  size="1"  onkeypress="displayc(event)"  ></td>
                </tr>
 
                 <tr  >
-                    <td style="width:100px;height:100px;" id="d"  ><input type="text" required maxlength="1"  size="1"  onkeypress="displayd(event)" ></td>
-                    <td style="width:100px;height:100px;" id="e" ><input type="text" required maxlength="1"  size="1"  onkeypress="displaye(event)"  ></td>
-                    <td style="width:100px;height:100px;"  id="f" ><input type="text" required maxlength="1"  size="1"  onkeypress="displayf(event)" ></td>
+                    <td style="width:100px;height:100px;"   ><input id="forth" type="text" required maxlength="1"  size="1"  onkeypress="displayd(event) "   ></td>
+                    <td style="width:100px;height:100px;" ><input  id="fifth" type="text" required maxlength="1"  size="1"  onkeypress="displaye(event)"  ></td>
+                    <td style="width:100px;height:100px;"  ><input  id="sixth" type="text" required maxlength="1"  size="1"  onkeypress="displayf(event)" ></td>
                 </tr>
 
                 <tr>
-                    <td style="width:100px;height:100px;"  id="g" ><input type="text" required maxlength="1"  size="1" onkeypress="displayg(event)" ></td>
-                    <td style="width:100px;height:100px;" id="h" ><input type="text" required maxlength="1"  size="1"   onkeypress="displayh(event)"  ></td>
-                    <td style="width:100px;height:100px;" id="i" ><input type="text" required maxlength="1"  size="1"   onkeypress="displayi(event)"  ></td>
+                    <td style="width:100px;height:100px;"   ><input id="seventh" type="text" required maxlength="1"  size="1" onkeypress="displayg(event)" ></td>
+                    <td style="width:100px;height:100px;"  ><input id="eighth" type="text" required maxlength="1"  size="1"   onkeypress="displayh(event)"  ></td>
+                    <td style="width:100px;height:100px;"  ><input id="nineth" type="text" required maxlength="1"  size="1"   onkeypress="displayi(event)"  ></td>
                 </tr>
                 
             </table>
