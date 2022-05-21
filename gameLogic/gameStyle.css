@@ -16,19 +16,22 @@
 }
 
 #text{
-    margin-left:60px;
+    margin-left:36px;
     font-weight: 1000;
-    color:orangered;
+    color:#fcba03;
+    letter-spacing: 4px;
 }
 
 #game{
 
-    color: white;
-    background-color: black;
+    color: #1e2f4a;
+    background-color: skyblue;
     font-size: 50px;
     display : none;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 30px;
+    margin-top: 380px;
+    box-shadow: none;
 }
 #game2{
 
@@ -58,7 +61,7 @@ input[type="text" ], textarea {
     left: 0;
     right: 0;
     resize: none;
-    background-color: #99ebff;
+    background-color:  #4d4d4d;
     border-radius: 20px;
     border:3px solid black;
     font-size: 50px;
@@ -80,6 +83,7 @@ input[type="text" ], textarea {
     display:none;
     color: white;
     font-weight: 700;
+    letter-spacing: 2px;
   
     
 }
@@ -90,7 +94,7 @@ input[type="text" ], textarea {
     color:black;
     margin-left:850px;
     font-weight: 700;
-    
+    letter-spacing: 2px;
     
 } 
 
@@ -125,7 +129,7 @@ input[type="text" ], textarea {
  #draw{
     display:none  ;
     margin-left:475px;
-    color:grey;
+    color:aquamarine;
     font-weight: 1000;
  }
 

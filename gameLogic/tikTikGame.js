@@ -41,11 +41,18 @@ function hideStartButton(){
 }
 
 
+function blink ()
+{
+        document.getElementById("game").style.boxShadow="10px 10px"
+}
+
+
+
 
 function showTable(){
 
     hideStartButton();
-    document.getElementById("image").style.display="none";
+    // document.getElementById("image").style.display="none";
     document.getElementById("page").style.display="block";
      
 setTimeout(function player1(){
@@ -80,6 +87,7 @@ function hidePlayer2(){
 function sorry1(){
     document.getElementById("sorry1").style.display="block";
      document.getElementById("resetA").style.display="block";
+     noUseAll();
    
     // alert(" ia m sorr1");
     
@@ -89,9 +97,11 @@ function sorry1(){
 }
 
 function resetA(){
-    // alert("I am resetA");
+    alert("I am resetA");
     document.getElementById("sorry1").style.display="none";
      document.getElementById("resetA").style.display="none";
+
+    
      document.getElementById("first").disabled=false;
      document.getElementById("second").disabled=false;
      document.getElementById("third").disabled=false;
@@ -103,44 +113,49 @@ function resetA(){
      document.getElementById("nineth").disabled=false;
 
      if(lastValue===1){
-        
+        //  alert("i am checking position");
+        document.getElementById("first").disabled=false;
         document.getElementById("first").value="";
+      
      }
   else if(lastValue===2){
-      
+    document.getElementById("second").disabled=false;
     document.getElementById("second").value="";
+   
+
   }
    
   else if(lastValue===3){
-  
+    document.getElementById("third").disabled=false;
     document.getElementById("third").value="";
   }
    
   else if(lastValue===4){
-    
+    document.getElementById("forth").disabled=false;
     document.getElementById("forth").value="";
   }
    
   else if(lastValue===5){
-   
+    document.getElementById("fifth").disabled=false;
     document.getElementById("fifth").value="";
   }
 
   else if(lastValue===6){
-   
+    document.getElementById("sixth").disabled=false;
     document.getElementById("sixth").value="";
   }
   else if(lastValue===7){
-    
+    document.getElementById("seventh").disabled=false;
     document.getElementById("seventh").value="";
   }
   else if(lastValue===8){
-    
+    document.getElementById("eighth").disabled=false;
     document.getElementById("eighth").value="";
   }
 
   else if(lastValue===9){
     // alert(" i am i");
+    document.getElementById("nineth").disabled=false;
     document.getElementById("nineth").value="";
   }
   else{
@@ -152,10 +167,11 @@ function resetA(){
 
 
 function resetB(){
-    // alert("i am reset B");
+    alert("i am reset B");
   
     document.getElementById("sorry2").style.display="none";
       document.getElementById("resetB").style.display="none";
+
       document.getElementById("first").disabled=false;
      document.getElementById("second").disabled=false;
      document.getElementById("third").disabled=false;
@@ -166,43 +182,44 @@ function resetB(){
      document.getElementById("eighth").disabled=false;
      document.getElementById("nineth").disabled=false;
       if(lastValue===1){
-       
+          alert("i am checking position ");
+          document.getElementById("first").disabled=false;
         document.getElementById("first").value="";
      }
   else if(lastValue===2){
-      
+    document.getElementById("second").disabled=false;
     document.getElementById("second").value="";
   }
    
   else if(lastValue===3){
-  
+    document.getElementById("third").disabled=false;
     document.getElementById("third").value="";
   }
    
   else if(lastValue===4){
-    
+    document.getElementById("forth").disabled=false;
     document.getElementById("forth").value="";
   }
    
   else if(lastValue===5){
-   
+    document.getElementById("fifth").disabled=false;
     document.getElementById("fifth").value="";
   }
 
   else if(lastValue===6){
-   
+    document.getElementById("sixth").disabled=false;
     document.getElementById("sixth").value="";
   }
   else if(lastValue===7){
-    
+    document.getElementById("seventh").disabled=false;
     document.getElementById("seventh").value="";
   }
   else if(lastValue===8){
-    
+    document.getElementById("eighth").disabled=false;
     document.getElementById("eighth").value="";
   }
   else if(lastValue===9){
-    
+    document.getElementById("nineth").disabled=false;
     document.getElementById("nineth").value="";
   }
 
@@ -230,6 +247,7 @@ function win2(){
     document.getElementById("win2").style.display="block";
 }
 function draw(){
+    alert("i am working");
     document.getElementById("draw").style.display="block";
 }
 
@@ -243,42 +261,50 @@ function refreshPage2(){
 
 function noUsea(){
 
-    
-    document.getElementById("first").disabled=true;
+    // document.getElementById("first").style.background="white";
+    document.getElementById("first").disabled=true; 
     
     }
 
 function noUseb(){
-    document.getElementById("second").disabled=true;
+    // document.getElementById("second").style.background="white";
+    document.getElementById("second").disabled=true; 
    
 }
 
 function noUsec(){
+    // document.getElementById("third").style.background="white";
     document.getElementById("third").disabled=true;
 }
 
 function noUsed(){
-    document.getElementById("forth").disabled=true;
+    // document.getElementById("forth").style.background="white";
+    document.getElementById("forth").disabled=true; 
 }
 
 function noUsee(){
-    document.getElementById("fifth").disabled=true;
+    // document.getElementById("fifth").style.background="white";
+    document.getElementById("fifth").disabled=true; 
 }
 
 function noUsef(){
+    // document.getElementById("sixth").style.background="white";
     document.getElementById("sixth").disabled=true;
 }
 
 function noUseg(){
-    document.getElementById("seventh").disabled=true;
-}
+    // document.getElementById("seventh").style.background="white";
+    document.getElementById("seventh").disabled=true; 
+} 
 
 function noUseh(){
-    document.getElementById("eighth").disabled=true;
+    // document.getElementById("eighth").style.background="white";
+    document.getElementById("eighth").disabled=true; 
 }
 
 function noUsei(){
-    document.getElementById("nineth").disabled=true;
+    // document.getElementById("nineth").style.background="white";
+    document.getElementById("nineth").disabled=true; 
 }
 
 function noUseAll(){
@@ -308,15 +334,17 @@ function displaya(event)
     
         sorry1();
 
-        noUseAll();
+        // noUseAll();
        }
 
         else{
             hidePlayer1();
             player2();
              total++;
-             noUsea();
              document.getElementById("first").style.background="white";
+             noUsea();
+            // document.getElementById("first").disabled=true;
+            
            
 
         }
@@ -331,12 +359,15 @@ function displaya(event)
        if(a!==111){
         
          sorry2();
-        noUseAll();
+        // noUseAll();
     }
     else{
         total++;
         noUsea();
         document.getElementById("first").style.background="black";
+
+        // document.getElementById("first").disabled=true;
+        
 
     }
     
@@ -348,23 +379,26 @@ function displaya(event)
         {
             
             sorry1();
-           noUseAll();
+        //    noUseAll();
          }
 
          else
          {
              noUsea();
              document.getElementById("first").style.background="white";
+
+            //   document.getElementById("first").disabled=true;
+        
         if(((a===120)&&(b===120)&&(c===120))  || ((a===120)&&(d==120)&&(g===120)) || ((a===120)&&(e===120)&&(i)===120)){
            win1();
            game2();
-           noUseAll();
+        //    noUseAll();
         }
         else
         {
             draw();
             game2();
-            noUseAll();
+            // noUseAll();
         }
 
     }
@@ -380,17 +414,19 @@ function displaya(event)
       {
        
             sorry1(); 
-            noUseAll();
+            // noUseAll();
       }
          else
          {
-           noUsea();
-           document.getElementById("first").style.background="white";
+            noUsea();
+            document.getElementById("first").style.background="white";
+        // document.getElementById("first").disabled=true;
+           
            if(((a===120)&&(b===120)&&(c===120))  || ((a===120)&&(d==120)&&(g===120)) || ((a===120)&&(e===120)&&(i)===120))
            {
             win1();
             game2();
-            noUseAll();
+            // noUseAll();
             
             }
          total++;
@@ -408,17 +444,20 @@ function displaya(event)
     { 
        
         sorry2(); 
-        noUseAll();
+        // noUseAll();
            
     }
         else
         {
             noUsea();
             document.getElementById("first").style.background="black";
+           
+            // document.getElementById("first").disabled=true; 
+          
         if(((a===111)&&(b===111)&&(c===111))  || ((a===111)&&(d===111)&&(g===111)) || ((a===111)&&(e===111)&&(i===111))){
         win2();
         game2();
-        noUseAll();
+        // noUseAll();
             }
             total++;
         }
@@ -1285,6 +1324,7 @@ function displayh(event){
 
 
 function displayi(event){
+    
     
     lastValue=9;
     
