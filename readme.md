@@ -114,17 +114,21 @@
 
 ## Sample Screens ##
 
-<img src="gameLogic/images/demo1.png">
+<img src="images/sampleImage1.png">
 
-<img src="gameLogic/images/demo2.png">
+<img src="images/sampleImage2.png">
 
-<img src="gameLogic/images/demo3.png">
+<img src="images/sampleImage3.png">
 
-<img src="gameLogic/images/demo4.png">
+<img src="images/sampleImage4.png">
 
-<img src="gameLogic/images/demo5.png">
+<img src="images/sampleImage5.png">
 
-<img src="gameLogic/images/demo6.png">
+<img src="images/sampleImage6.png">
+
+<img src="images/sampleImage7.png">
+
+<img src="images/sampleImage8.png">
    
 
 

@@ -16,7 +16,7 @@
 
 <!-- <body style="background:   #F7BCAE" onload="start()"> -->
 
-    <body style="background:   grey" onload="start()">
+    <body style="background:   grey"  id="body"onload="start()">
 
     <div class="container">
     
@@ -36,8 +36,8 @@
             <div class="d-flex align-items-center justify-content-center">
                 <button class="btn btn-lg " id="game"  onclick="showTable()" onmouseover="blink();" > Start Game </button>
                 </div>
-                <h2 id="player1" > Hey player1 use <span style="color: #4d4dff">x</span></h2>
-                <h2 id="player2" > Hey player2 use <span style="color: #4d4dff">o</span></h2>
+                <h1 id="player1" > Hey <span style="color:#fcba03">player1</span> ! select position and press <span style="color:#fcba03;">x</span></h1>
+                <h1 id="player2" > Hey  <span style="color:#fcba03">player2</span> ! select position and press <span style="color:#fcba03;">o</span></h1>
 
                 <h4 id ="sorry1"> Oops ! Sorry You entered a wrong key </h4>
                 <button class="btn btn-danger btn-lg" id="resetA" onclick="resetA()" >Reset</button>
@@ -48,7 +48,7 @@
 
             <div  id = "page">
             <h1 id="text" > Tic Tac Toe </h1>
-            <table >
+            <table id="table" >
                 <tr>
                      <!-- <td id="sample1"><input type="text" onkeypress="chumma(event)" id="sample2"></td>  -->
                     <td ><input  id="first" type="text"  required maxlength="1" size="1"

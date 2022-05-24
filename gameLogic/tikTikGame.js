@@ -10,6 +10,7 @@ var i="";
 var x="";
 var total=1;
 var lastValue;
+var final; 
 // console.log(a);
 
 
@@ -63,6 +64,11 @@ setTimeout(function player1(){
 
 }
 
+function player1(){
+    document.getElementById("player1").style.display="block";
+    
+}
+
 
 function hidePlayer1(){
     document.getElementById("player1").style.display="none";
@@ -70,12 +76,14 @@ function hidePlayer1(){
 
 function player2(){
     document.getElementById("player2").style.display="block";
+    
        
 }
 
 function hidePlayer2(){
     
     document.getElementById("player2").style.display="none";
+    // player1();
 }
 
 
@@ -97,7 +105,7 @@ function sorry1(){
 }
 
 function resetA(){
-    alert("I am resetA");
+    // alert("I am resetA");
     document.getElementById("sorry1").style.display="none";
      document.getElementById("resetA").style.display="none";
 
@@ -164,10 +172,8 @@ function resetA(){
 
 }
 
-
-
 function resetB(){
-    alert("i am reset B");
+    // alert("i am reset B");
   
     document.getElementById("sorry2").style.display="none";
       document.getElementById("resetB").style.display="none";
@@ -182,7 +188,7 @@ function resetB(){
      document.getElementById("eighth").disabled=false;
      document.getElementById("nineth").disabled=false;
       if(lastValue===1){
-          alert("i am checking position ");
+        //   alert("i am checking position ");
           document.getElementById("first").disabled=false;
         document.getElementById("first").value="";
      }
@@ -230,10 +236,14 @@ function resetB(){
   }
 
 }
+
+
+
  
 function sorry2(){
     document.getElementById("sorry2").style.display="block";
     document.getElementById("resetB").style.display="block";
+    noUseAll();
     // setTimeout( function refreshPage(){
     //     document.location.reload(true);
     //     },700)
@@ -241,14 +251,72 @@ function sorry2(){
 
 function win1(){
     document.getElementById("win1").style.display="block";
+    document.getElementById("table").style.background="white"
+    document.getElementById("first").style.background="white";
+    document.getElementById("first").style.border="none";
+    document.getElementById("second").style.background="white";
+    document.getElementById("second").style.border="none";
+    document.getElementById("third").style.background="white";
+    document.getElementById("third").style.border="none";
+    document.getElementById("forth").style.background="white";
+    document.getElementById("forth").style.border="none";
+    document.getElementById("fifth").style.background="white";
+    document.getElementById("fifth").style.border="none";
+    document.getElementById("sixth").style.background="white";
+    document.getElementById("sixth").style.border="none";
+    document.getElementById("seventh").style.background="white";
+    document.getElementById("seventh").style.border="none";
+    document.getElementById("eighth").style.background="white";
+    document.getElementById("eighth").style.border="none";
+    document.getElementById("nineth").style.background="white";
+    document.getElementById("nineth").style.border="none";
 }
 
 function win2(){
     document.getElementById("win2").style.display="block";
+    document.getElementById("table").style.background="black"
+    document.getElementById("first").style.background="black";
+    document.getElementById("first").style.border="none";
+    document.getElementById("second").style.background="black";
+    document.getElementById("second").style.border="none";
+    document.getElementById("third").style.background="black";
+    document.getElementById("third").style.border="none";
+    document.getElementById("forth").style.background="black";
+    document.getElementById("forth").style.border="none";
+    document.getElementById("fifth").style.background="black";
+    document.getElementById("fifth").style.border="none";
+    document.getElementById("sixth").style.background="black";
+    document.getElementById("sixth").style.border="none";
+    document.getElementById("seventh").style.background="black";
+    document.getElementById("seventh").style.border="none";
+    document.getElementById("eighth").style.background="black";
+    document.getElementById("eighth").style.border="none";
+    document.getElementById("nineth").style.background="black";
+    document.getElementById("nineth").style.border="none";
 }
 function draw(){
-    alert("i am working");
+    // alert("i am working");
     document.getElementById("draw").style.display="block";
+    document.getElementById("table").style.background="grey"
+    document.getElementById("first").style.background="grey";
+    document.getElementById("first").style.border="none";
+    document.getElementById("second").style.background="grey";
+    document.getElementById("second").style.border="none";
+    document.getElementById("third").style.background="grey";
+    document.getElementById("third").style.border="none";
+    document.getElementById("forth").style.background="grey";
+    document.getElementById("forth").style.border="none";
+    document.getElementById("fifth").style.background="grey";
+    document.getElementById("fifth").style.border="none";
+    document.getElementById("sixth").style.background="grey";
+    document.getElementById("sixth").style.border="none";
+    document.getElementById("seventh").style.background="grey";
+    document.getElementById("seventh").style.border="none";
+    document.getElementById("eighth").style.background="grey";
+    document.getElementById("eighth").style.border="none";
+    document.getElementById("nineth").style.background="grey";
+    document.getElementById("nineth").style.border="none";
+    document.getElementById("body").style.background="black";
 }
 
 function game2(){
@@ -259,8 +327,9 @@ function refreshPage2(){
     document.location.reload(true);
 }
 
-function noUsea(){
+const noUsea=function (){
 
+    // alert("i am working");
     // document.getElementById("first").style.background="white";
     document.getElementById("first").disabled=true; 
     
@@ -325,6 +394,7 @@ function noUseAll(){
 function displaya(event)
 {
     lastValue=1;
+    // final=0;
 
      a = event.keyCode;
     
@@ -343,6 +413,10 @@ function displaya(event)
              total++;
              document.getElementById("first").style.background="white";
              noUsea();
+            // const first=document.getElementById("first");
+            // first.style.background="white";
+            // first.style.background="green";
+             final=1;
             // document.getElementById("first").disabled=true;
             
            
@@ -355,6 +429,7 @@ function displaya(event)
     else if(total===2){
        
      hidePlayer2();
+    //  player1();
        
        if(a!==111){
         
@@ -364,6 +439,7 @@ function displaya(event)
     else{
         total++;
         noUsea();
+        final=1;
         document.getElementById("first").style.background="black";
 
         // document.getElementById("first").disabled=true;
@@ -374,6 +450,7 @@ function displaya(event)
     }
     else if(total===9)
     {
+        
        
         if(a!==120)
         {
@@ -386,19 +463,19 @@ function displaya(event)
          {
              noUsea();
              document.getElementById("first").style.background="white";
-
+             final=1;
             //   document.getElementById("first").disabled=true;
         
         if(((a===120)&&(b===120)&&(c===120))  || ((a===120)&&(d==120)&&(g===120)) || ((a===120)&&(e===120)&&(i)===120)){
            win1();
            game2();
-        //    noUseAll();
+           noUseAll();
         }
         else
         {
             draw();
             game2();
-            // noUseAll();
+            noUseAll();
         }
 
     }
@@ -408,7 +485,8 @@ function displaya(event)
     else if( total%2 !== 0 )
 
     {
-        
+      
+       
         
       if(a!==120)
       {
@@ -420,13 +498,14 @@ function displaya(event)
          {
             noUsea();
             document.getElementById("first").style.background="white";
+            final=1;
         // document.getElementById("first").disabled=true;
            
            if(((a===120)&&(b===120)&&(c===120))  || ((a===120)&&(d==120)&&(g===120)) || ((a===120)&&(e===120)&&(i)===120))
            {
             win1();
             game2();
-            // noUseAll();
+            noUseAll();
             
             }
          total++;
@@ -451,13 +530,13 @@ function displaya(event)
         {
             noUsea();
             document.getElementById("first").style.background="black";
-           
+            final=1;
             // document.getElementById("first").disabled=true; 
           
         if(((a===111)&&(b===111)&&(c===111))  || ((a===111)&&(d===111)&&(g===111)) || ((a===111)&&(e===111)&&(i===111))){
         win2();
         game2();
-        // noUseAll();
+        noUseAll();
             }
             total++;
         }
@@ -471,7 +550,7 @@ function displaya(event)
 
 function displayb(event){
     lastValue=2;
-
+//   final=0;
 b = event.keyCode;
    
     if(total===1){
@@ -485,6 +564,8 @@ b = event.keyCode;
             player2();
             total++;
             noUseb();
+            final=2;
+
              document.getElementById("second").style.background="white";
 
         }
@@ -504,6 +585,7 @@ b = event.keyCode;
        {
           total++;
           noUseb();
+          final=2;
         document.getElementById("second").style.background="black";
        }
     }
@@ -523,6 +605,7 @@ b = event.keyCode;
         {
             noUseb();
             document.getElementById("second").style.background="white";
+            final=2;
 
         if( ((a===120)&&(b===120)&&(c===120))  || ((b===120)&&(e===120)&&(h===120)) )
         {
@@ -556,6 +639,7 @@ b = event.keyCode;
         {
             noUseb();
             document.getElementById("second").style.background="white";
+            final=2;
 
         if( ((a===120)&&(b===120)&&(c===120))  || ((b===120)&&(e===120)&&(h===120)) )
         {
@@ -580,6 +664,7 @@ b = event.keyCode;
         else
         {
             noUseb();
+            final=2;
             document.getElementById("second").style.background="black";
 
         if( ((a===111)&&(b===111)&&(c===111))  || ((b===111)&&(e===111)&&(h===111)) )
@@ -621,6 +706,7 @@ b = event.keyCode;
             player2();
             total++;
             noUsec();
+            final=3;
             document.getElementById("third").style.background="white";
         }
     }
@@ -637,6 +723,7 @@ b = event.keyCode;
     else{
         total++;
         noUsec();
+        final=3;
         document.getElementById("third").style.background="black";
 
     }
@@ -653,6 +740,7 @@ b = event.keyCode;
         else
         {
             noUsec();
+            final=3;
              document.getElementById("third").style.background="white";
              if( ((a===120)&&(b===120)&&(c===120))  || ((g===120)&&(e===120)&&(c===120) ) || ((c===120)&&(f===120)&&(i===120) ) )
              {
@@ -683,6 +771,7 @@ b = event.keyCode;
         else
         {
             noUsec();
+            final=3;
             document.getElementById("third").style.background="white";
              if( ((a===120)&&(b===120)&&(c===120))  || ((g===120)&&(e===120)&&(c===120) ) || ((c===120)&&(f===120)&&(i===120) ) )
              {
@@ -705,6 +794,7 @@ b = event.keyCode;
         else
         {
             noUsec();
+            final=3;
             document.getElementById("third").style.background="black";
             if( ((a===111)&&(b===111)&&(c===111))  || ((g===111)&&(e===111)&&(c===111) ) || ((c===111)&&(f===111)&&(i===111) ) )
              {
@@ -737,6 +827,7 @@ b = event.keyCode;
             hidePlayer1();
             player2();
             total++;
+            final=4;
             noUsed();
             document.getElementById("forth").style.background="white";
         }
@@ -755,6 +846,7 @@ b = event.keyCode;
     {
         total++;
         noUsed();
+        final=4;
         document.getElementById("forth").style.background="black";
     }
     }
@@ -770,6 +862,7 @@ b = event.keyCode;
         else
         {
             noUsed();
+            final=4;
             document.getElementById("forth").style.background="white";
         if( ((a===120)&&(d===120)&&(g===120))  || ((d===120)&&(e===120)&&(f===120)) ) 
         {
@@ -798,6 +891,7 @@ b = event.keyCode;
     else
     {
         noUsed();
+        final=4;
            document.getElementById("forth").style.background="white";
         if( ((a===120)&&(d===120)&&(g===120))  || ((d===120)&&(e===120)&&(f===120)) ) 
         {
@@ -821,6 +915,7 @@ b = event.keyCode;
     else
     {
         noUsed();
+        final=4;
         document.getElementById("forth").style.background="black";
         if( ((a===111)&&(d===111)&&(g===111))  || ((d===111)&&(e===111)&&(f===111)) ) 
         {
@@ -852,6 +947,7 @@ function displaye(event){
             hidePlayer1();
             player2();
             total++;
+            final=5;
             noUsee();
              document.getElementById("fifth").style.background="white";
            
@@ -872,6 +968,7 @@ function displaye(event){
      }
      else{
          total++;
+         final=5;
          noUsee();
          document.getElementById("fifth").style.background="black";
  
@@ -889,6 +986,7 @@ function displaye(event){
     else
     {
         noUsee();
+        final=5;
         document.getElementById("fifth").style.background="white";
         if( ((a===120)&&(e===120)&&(i===120) )  || ( (g===120)&&(e===120)&&(c===120) )  || ( (d===120)&&(e===120)&&(f===120) )  || ((b===120)&&(e===120)&&(h===120)) )
         {
@@ -916,6 +1014,7 @@ function displaye(event){
         else
         {
             noUsee();
+            final=5;
             document.getElementById("fifth").style.background="white";
             if( ((a===120)&&(e===120)&&(i===120) )  || ( (g===120)&&(e===120)&&(c===120) )  || ( (d===120)&&(e===120)&&(f===120) )  || ((b===120)&&(e===120)&&(h===120)) )
         {
@@ -939,6 +1038,7 @@ function displaye(event){
     else
     {
         noUsee();
+        final=5;
             document.getElementById("fifth").style.background="black";
             if( ((a===111)&&(e===111)&&(i===111) )  || ( (g===111)&&(e===111)&&(c===111) )  || ( (d===111)&&(e===111)&&(f===111) )  || ((b===111)&&(e===111)&&(h===111)) )
             {
@@ -980,6 +1080,7 @@ function displayf(event){
             hidePlayer1();
             player2();
             total++;
+            final=6;
             noUsef();
              document.getElementById("sixth").style.background="white";
            
@@ -998,6 +1099,7 @@ function displayf(event){
        else
        {
            total++;
+           final=6;
            noUsef();
            document.getElementById("sixth").style.background="black";
        }
@@ -1013,6 +1115,7 @@ function displayf(event){
         else
         {
             noUsef();
+            final=6;
             document.getElementById("sixth").style.background="white";
         if( ( (c===120)&&(f===120)&&(i===120) ) || ((d===120)&&(e===120)&&(f===120) ) )
         {
@@ -1040,6 +1143,7 @@ function displayf(event){
         else
         {
             noUsef();
+            final=6;
             document.getElementById("sixth").style.background="white";
         if( ( (c===120)&&(f===120)&&(i===120) ) || ((d===120)&&(e===120)&&(f===120) ) )
         {
@@ -1062,6 +1166,7 @@ function displayf(event){
          }
         else{
             noUsef();
+            final=6;
             document.getElementById("sixth").style.background="black";
             if( ( (c===111)&&(f===111)&&(i===111) ) || ((d===111)&&(e===111)&&(f===111) ) )
             {
@@ -1095,6 +1200,7 @@ if(total===1)
             hidePlayer1();
             player2();
             total++;
+            final=7;
             noUseg();
             document.getElementById("seventh").style.background="white";
           
@@ -1113,6 +1219,7 @@ else if(total===2)
     else
     {
    total++;
+   final=7;
    noUseg();
         document.getElementById("seventh").style.background="black";
 
@@ -1130,6 +1237,7 @@ else if(total===9)
     else
     {
         noUseg();
+        final=7;
              document.getElementById("seventh").style.background="white";
     if(((a===120)&&(d===120)&&(g===120) )  || ( (g===120)&&(e===120)&&(c===120) )
          || ( (g===120)&&(h===120)&&(i===120) ) ) 
@@ -1157,6 +1265,7 @@ else if(total%2!==0)
     else
     {
         noUseg();
+        final=7;
            document.getElementById("seventh").style.background="white";
             if(((a===120)&&(d===120)&&(g===120) )  || ( (g===120)&&(e===120)&&(c===120) )
          || ( (g===120)&&(h===120)&&(i===120) ) ) 
@@ -1182,6 +1291,7 @@ else if(total%2!==0)
         else
         {
             noUseg();
+            final=7;
             document.getElementById("seventh").style.background="black";
             if(((a===111)&&(d===111)&&(g===111) )  || ( (g===111)&&(e===111)&&(c===111) )
             || ( (g===111)&&(h===111)&&(i===111) ) ) 
@@ -1219,6 +1329,7 @@ function displayh(event){
             hidePlayer1();
             player2();
             total++;
+            final=8;
             noUseh();
             document.getElementById("eighth").style.background="white";
           
@@ -1238,6 +1349,7 @@ function displayh(event){
     else
     {
         total++;
+        final=8;
         noUseh();
         document.getElementById("eighth").style.background="black";
     }
@@ -1253,6 +1365,7 @@ function displayh(event){
         else
         {
             noUseh();
+            final=8;
             document.getElementById("eighth").style.background="white";
         if( ( (g===120)&&(h===120)&&(i===120) )  || ( (b===120)&&(e===120)&&(h===120) ) )
         {
@@ -1281,6 +1394,7 @@ function displayh(event){
         else
         {
             noUseh();
+            final=8;
             document.getElementById("eighth").style.background="white";
             if( ( (g===120)&&(h===120)&&(i===120) )  || ( (b===120)&&(e===120)&&(h===120) ) )
         {
@@ -1303,6 +1417,7 @@ function displayh(event){
         else
         {
             noUseh();
+            final=8;
             document.getElementById("eighth").style.background="black";
             if( ( (g===111)&&(h===111)&&(i===111) )  || ( (b===111)&&(e===111)&&(h===111) ) )
         
@@ -1347,6 +1462,7 @@ if(total===1)
             hidePlayer1();
             player2();
             total++;
+            final=9;
             noUsei();
              document.getElementById("nineth").style.background="white";
           
@@ -1366,6 +1482,7 @@ else if(total===2)
        else
        {
          total++;
+         final=9;
          noUsei();
          document.getElementById("nineth").style.background="black";
        
@@ -1383,6 +1500,7 @@ else if(total===9)
         else
         {
             noUsei();
+            final=9;
             document.getElementById("nineth").style.background="white";
         if( ( (g===120)&&(h===120)&&(i===120) )  || ( (c===120)&&(f===120)&&(i===120) ) || ( (a===120)&&(e===120)&&(i===120) ) )
         {
@@ -1414,6 +1532,7 @@ else if(total%2!==0)
         else
         {
             noUsei();
+            final=9;
             document.getElementById("nineth").style.background="white";
         if( ( (g===120)&&(h===120)&&(i===120) )  || ( (c===120)&&(f===120)&&(i===120) ) || ( (a===120)&&(e===120)&&(i===120) ) )
         {
@@ -1437,6 +1556,7 @@ else{
      }
     else{
         noUsei();
+        final=9;
         document.getElementById("nineth").style.background="black";
          if( ( (g===111)&&(h===111)&&(i===111) )  || ( (c===111)&&(f===111)&&(i===111) ) || ( (a===111)&&(e===111)&&(i===111) ) )
             {

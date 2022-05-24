@@ -35,11 +35,11 @@
 }
 #game2{
 
-    color: white;
-    background-color: black;
+    color: #1e2f4a;
+    background-color: skyblue;
     font-size: 50px;
     display : none;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 30px;
     margin-top: 50px;
     margin-left: 450px;
@@ -83,6 +83,7 @@ input[type="text" ], textarea {
     display:none;
     color: white;
     font-weight: 700;
+    margin-left:280px;
     letter-spacing: 2px;
   
     
@@ -92,9 +93,10 @@ input[type="text" ], textarea {
 #player2{
     display:none;
     color:black;
-    margin-left:850px;
+    margin-left:280px;
     font-weight: 700;
     letter-spacing: 2px;
+    
     
 } 
 
@@ -140,4 +142,5 @@ input[type="text" ], textarea {
     display:none;
     margin-left:850px;
 }
+
 
