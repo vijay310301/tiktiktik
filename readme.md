@@ -116,19 +116,19 @@
 
 <img src="gameLogic/images/sampleImage1.png">
 
-<img src="images/sampleImage2.png">
+<img src="gameLogic/images/sampleImage2.png">
 
-<img src="images/sampleImage3.png">
+<img src="gameLogic/images/sampleImage3.png">
 
-<img src="images/sampleImage4.png">
+<img src="gameLogic/images/sampleImage4.png">
 
-<img src="images/sampleImage5.png">
+<img src="gameLogic/images/sampleImage5.png">
 
-<img src="images/sampleImage6.png">
+<img src="gameLogic/images/sampleImage6.png">
 
-<img src="images/sampleImage7.png">
+<img src="gameLogic/images/sampleImage7.png">
 
-<img src="images/sampleImage8.png">
+<img src="gameLogic/images/sampleImage8.png">
    
 
 
