@@ -114,7 +114,7 @@
 
 ## Sample Screens ##
 
-<img src="images/sampleImage1.png">
+<img src="gameLogic/images/sampleImage1.png">
 
 <img src="images/sampleImage2.png">
 
